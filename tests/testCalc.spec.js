@@ -1,8 +1,8 @@
 // @ts-check
-import { test, expect } from '@playwright/test';
+import { test, expect, chromium } from '@playwright/test';
 
 test('Positive Test: Addition', async ({ page }) => {
-  await page.goto('file:///C:/Users/meza2/OneDrive/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/it-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F/JSCalculator/index.html');
+  await page.goto('file:///../index.html');
   
   // Вводим числа
   await page.fill('#num1', '10');
@@ -16,7 +16,7 @@ test('Positive Test: Addition', async ({ page }) => {
 });
 
 test('Positive Test: Division without errors', async ({ page }) => {
-  await page.goto('file:///C:/Users/meza2/OneDrive/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/it-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F/JSCalculator/index.html');
+  await page.goto('file:///../index.html');
   
   // Вводим числа
   await page.fill('#num1', '100');
@@ -30,7 +30,7 @@ test('Positive Test: Division without errors', async ({ page }) => {
 });
 
 test('Negative Test: Division by zero', async ({ page }) => {
-  await page.goto('file:///C:/Users/meza2/OneDrive/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/it-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F/JSCalculator/index.html');
+  await page.goto('file:///../index.html');
   
  // Вводим числа
  await page.fill('#num1', '50');
@@ -50,7 +50,7 @@ test('Negative Test: Division by zero', async ({ page }) => {
 });
 
 test('Negative Test: Empty fields', async ({ page }) => {
-  await page.goto('file:///C:/Users/meza2/OneDrive/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/it-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F/JSCalculator/index.html');
+  await page.goto('file:///../index.html');
   
   // Оставляем оба поля пустыми
   await page.fill('#num1', '');
@@ -64,7 +64,7 @@ test('Negative Test: Empty fields', async ({ page }) => {
 });
 
 test('T',async ({page})=>{
-  await page.goto('file:///C:/Users/meza2/OneDrive/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/it-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F/JSCalculator/index.html');
+  await page.goto('file:///../index.html');
   await expect(page).toHaveTitle(/Калькулятор/);
 
 })
